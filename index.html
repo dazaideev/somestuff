@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>somestuff</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
     <style>
         html, body {
             height: 100%;
             margin: 0;
             display: flex;
             flex-direction: column;
+            font-family: 'IBM Plex Sans', sans-serif;
         }
 
         .content {
@@ -22,16 +24,6 @@
             margin-top: auto;
         }
 
-        .language-buttons {
-            position: fixed;
-            top: 10px;
-            right: 10px;
-        }
-
-        .language-buttons button {
-            margin: 5px;
-        }
-
         .footer-gif {
             margin-bottom: 20px;
         }
@@ -40,48 +32,24 @@
             margin-top: 20px;
         }
     </style>
-    <script>
-        const translations = {
-            en: {
-                title: "somestuff.com",
-                option1: "1. blah blah blah important things etc...",
-                option2: "2. GET CatUp!!!",
-                iframeTitle: "CatUp by dazai",
-                contact: "Contact",
-                discl: "why 'some stuffs'? 🚗cause it's cheaper"
-            },
-            pl: {
-                title: "trocherzeczy.com",
-                option1: "1. coś tam coć ważne rzeczy itd",
-                option2: "2. KUP CatUp (tanio)!!!",
-                iframeTitle: "CatUp od dazai",
-                contact: "Kontakt",
-                discl: "why 'some stuffs'? 🚗cause it's cheaper"
-            }
-        };
-
-        function changeLanguage(lang) {
-            document.getElementById("site-title").textContent = translations[lang].title;
-            document.getElementById("option1").textContent = translations[lang].option1;
-            document.getElementById("option2").textContent = translations[lang].option2;
-            document.getElementById("iframe-title").textContent = translations[lang].iframeTitle;
-            document.getElementById("contact").textContent = translations[lang].contact;
-            document.getElementById("discl").textContent = translations[lang].discl;
-        }
-    </script>
 </head>
 <body>
     <div class="content">
-        <h1 id="site-title">somestuff</h1>
+        <h1>somestuff</h1>
         <hr>
-        <a id="option1">1. blah blah blah</a>
+
+        <p>
+            <a style="font-size: 18px; font-weight: bold;" href="journal.html">journal</a>
+        </p>        
+        
+        <hr>
+        <a>1. blah blah blah important things etc...</a>
         <br>
-        <h2 id="option2" href="https://dazaizer0.itch.io/catup">2. GET CatUp!!!</h2>
+        <h2><a>2. GET CatUp!!!</a></h2>
         <div>
-            <img src="cat.gif" alt="explgif" width="130" height="100">
-            <img src="cat.gif" alt="explgif" width="130" height="100">
-            <img src="cat.gif" alt="explgif" width="130" height="100">
-            <img src="cat.gif" alt="explgif" width="130" height="100">
+            <img src="cat.gif" alt="cat gif" width="130" height="100">
+            <img src="cat.gif" alt="cat gif" width="130" height="100">
+            <img src="cat.gif" alt="cat gif" width="130" height="100">
         </div>
         <br>
         <iframe frameborder="0" src="https://itch.io/embed/2454690?fg_color=000000&amp;link_color=fe0006&amp;border_color=ffffff" width="552" height="167">
@@ -103,30 +71,25 @@
             <a href="https://dazaizer0.itch.io/cat-runner">cat grump jump by dazai</a>
         </iframe>
 
-        <br><br>
-        <a href="https://github.com/dazaizer0/beep_engine/releases/download/v1.1.1/beep_engine_out.zip">5. MAKE MUSIC WITH beep engine</a>
-        <br><br>
+        <br>
+        <br>
+        <a style="font-size: 20px; font-weight: bold;" href="https://github.com/dazaizer0/beep_engine/releases/download/v1.1.1/beep_engine_out.zip">5. MAKE MUSIC WITH beep engine</a>
+        <br>
+        <br>
     </div>
 
     <footer>
         <div class="footer-gif">
-            <img src="expl.gif" alt="explgif" width="290" height="300">
-            <img src="expl.gif" alt="explgif" width="290" height="300">
-            <img src="expl.gif" alt="explgif" width="290" height="300">
-            <img src="expl.gif" alt="explgif" width="290" height="300">
+            <img src="expl.gif" alt="explosion gif" width="250" height="250">
+            <img src="expl.gif" alt="explosion gif" width="250" height="250">
         </div>
         
         <hr>
-        <a id="discl">why 'somestuffs'? 🚗 cause it's cheaper</a>
+        <a>why 'somestuffs'? 🚗 cause it's cheaper</a>
         <p>
-            <a id="contact" href="https://x.com/dazaizer0">Contact</a>
+            <a href="https://x.com/dazaizer0">Contact</a>
             <a href="https://www.youtube.com/@dazaizer0"> Videos</a>
         </p>
     </footer>
-
-    <div class="language-buttons">
-        <button onclick="changeLanguage('en')">EN</button>
-        <button onclick="changeLanguage('pl')">PL</button>
-    </div>
 </body>
 </html>
