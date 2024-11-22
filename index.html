@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>somestuffs.com</title>
+    <title>somestuff.com</title>
     <style>
         html, body {
             height: 100%;
@@ -35,22 +35,28 @@
         .footer-gif {
             margin-bottom: 20px;
         }
+
+        .footer-text {
+            margin-top: 20px;
+        }
     </style>
     <script>
         const translations = {
             en: {
-                title: "somestuffs.com",
-                option1: "1. blah blah blah important things ect...",
+                title: "somestuff.com",
+                option1: "1. blah blah blah important things etc...",
                 option2: "2. GET CatUp!!!",
                 iframeTitle: "CatUp by dazai",
-                contact: "Contact"
+                contact: "Contact",
+                discl: "I know the domain name is grammatically incorrect, but it was cheaper compared to the correct one 'some stuff'."
             },
             pl: {
-                title: "jakiesrzeczy.com",
+                title: "trocherzeczy.com",
                 option1: "1. coś tam coć ważne rzeczy itd",
                 option2: "2. KUP CatUp (tanio)!!!",
                 iframeTitle: "CatUp od dazai",
-                contact: "Kontakt"
+                contact: "Kontakt",
+                discl: "Wiem, że nazwa domeny jest niepoprawna gramatycznie, ale była tańsza w porównaniu do poprawnej 'some stuff'."
             }
         };
 
@@ -60,12 +66,13 @@
             document.getElementById("option2").textContent = translations[lang].option2;
             document.getElementById("iframe-title").textContent = translations[lang].iframeTitle;
             document.getElementById("contact").textContent = translations[lang].contact;
+            document.getElementById("discl").textContent = translations[lang].discl;
         }
     </script>
 </head>
 <body>
     <div class="content">
-        <h1 id="site-title">somestuffs.com</h1>
+        <h1 id="site-title">somestuff.com</h1>
         <hr>
         <a id="option1">1. blah blah blah</a>
         <br>
@@ -80,6 +87,8 @@
         <div class="footer-gif">
             <img src="expl.gif" alt="explgif" width="250" height="300">
         </div>
+        
+        <a id="discl">I know the domain name is grammatically incorrect, but it was cheaper compared to the correct one 'somestuff'.</a>
         <p><a id="contact" href="#">Contact</a></p>
     </footer>
 
