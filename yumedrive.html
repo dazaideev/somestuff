@@ -15,8 +15,8 @@
         /* Main styles */
         body {
             font-family: 'Roboto', sans-serif;
-            background: #000; /* Black background */
-            color: #5c97de; /* Pink text */
+            background: #0a0a0a; /* Dark background for night racing */
+            color: #e3e3e3; /* Light text */
             overflow-x: hidden;
         }
 
@@ -25,10 +25,11 @@
             justify-content: space-between;
             align-items: center;
             padding: 1em 3em;
-            background: linear-gradient(90deg, #d3e6f2, #88bbdb);
+            background: linear-gradient(90deg, #ff0077, #9b00ff); /* Neon pink and purple gradient */
             position: sticky;
             top: 0;
             z-index: 1000;
+            color: #fff;
         }
 
         header h1 {
@@ -55,7 +56,7 @@
         }
 
         nav ul li a {
-            color: #4568ad; /* Pink text */
+            color: #fff; /* White text for contrast */
             text-decoration: none;
             font-weight: bold;
             text-transform: uppercase;
@@ -64,7 +65,7 @@
         .hero {
             position: relative;
             height: 100vh;
-            background: url('') no-repeat center center/cover;
+            background: linear-gradient(180deg, #0a0a0a, #550a5b), url('') no-repeat center center/cover;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -73,7 +74,8 @@
 
         .hero h2 {
             font-size: 3em;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+            color: #ff77aa; /* Cherry blossom pink */
+            text-shadow: 2px 2px 20px rgba(255, 119, 170, 0.8);
             animation: zoomIn 2s ease forwards;
         }
 
@@ -91,6 +93,7 @@
         .hero p {
             font-size: 1.2em;
             margin-top: 1em;
+            color: #fff; /* White text for clarity */
         }
 
         .hero button {
@@ -98,8 +101,8 @@
             font-size: 1em;
             margin-top: 2em;
             border: none;
-            background: #8ca7e5;
-            color: #000; /* Black button text */
+            background: #ff0077; /* Vibrant pink button */
+            color: #fff; /* White button text */
             text-transform: uppercase;
             cursor: pointer;
             border-radius: 5px;
@@ -107,7 +110,7 @@
         }
 
         .hero button:hover {
-            background: #4568ad;
+            background: #9b00ff; /* Neon purple on hover */
         }
 
         .features {
@@ -116,12 +119,12 @@
             justify-content: center;
             gap: 2em;
             padding: 4em 2em;
-            background: #1a1a1a;
+            background: #1a1a1a; /* Dark background for contrast */
         }
 
         .feature {
             width: 300px;
-            background: #2a2a2a;
+            background: #2a2a2a; /* Dark gray card */
             padding: 1.5em;
             border-radius: 10px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
@@ -131,7 +134,7 @@
 
         .feature:hover {
             transform: translateY(-10px);
-            background: #333;
+            background: #333; /* Slightly lighter on hover */
         }
 
         .feature img {
@@ -142,18 +145,21 @@
         .feature h3 {
             margin-top: 1em;
             font-size: 1.5em;
+            color: #ff77aa; /* Cherry blossom pink text */
         }
 
         .feature p {
             font-size: 1em;
             margin-top: 0.5em;
+            color: #ddd; /* Subtle text */
         }
 
         footer {
-            background: #000; /* Black background */
+            background: linear-gradient(90deg, #9b00ff, #ff0077); /* Pink and purple gradient */
             text-align: center;
             padding: 1em;
             font-size: 0.9em;
+            color: #fff;
         }
 
         footer p {
@@ -163,7 +169,7 @@
 </head>
 <body>
     <header>
-        <h1>Racing Enthusiasts</h1>
+        <h1>YUME DRIVE</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -182,19 +188,19 @@
 
     <section class="features" id="cars">
         <div class="feature">
-            <img src="Initial D-1.jpg" alt="Car 1">
+            <img src="redpink.jpg" alt="Car 1">
             <h3>YUME DRIVE</h3>
-            <p>coming soon...</p>
+            <p>Coming soon...</p>
         </div>
         <div class="feature">
-            <img src="Initial D-1.jpg" alt="Car 2">
+            <img src="redpink.jpg" alt="Car 2">
             <h3>YUME DRIVE</h3>
-            <p>coming soon...</p>
+            <p>Coming soon...</p>
         </div>
         <div class="feature">
-            <img src="Initial D-1.jpg" alt="Car 3">
+            <img src="redpink.jpg" alt="Car 3">
             <h3>YUME DRIVE</h3>
-            <p>coming soon...</p>
+            <p>Coming soon...</p>
         </div>
     </section>  
 
