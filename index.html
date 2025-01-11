@@ -4,122 +4,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>somestuff</title>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
-    
     <link rel="icon" href="somestuffs-icon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="somestuffs-icon.ico" type="image/x-icon">
     
+    <!-- Link do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+
     <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            font-family: 'IBM Plex Sans', sans-serif;
+        @font-face {
+            font-family: 'MingLiu';
+            src: url('MingLiUR.ttf') format('woff2'),
+                url('MingLiUR.ttf') format('woff'),
+                url('MingLiUR.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
         }
 
-        .content {
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Unica One', sans-serif; /* Zmieniony font */
+            font-size: 20px;
+            color: white;
+            background: url('Główna miniatura produktu-BG.png') no-repeat center center fixed;
+            background-size: cover; 
+            display: flex;
+            flex-direction: column;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Layout Utility Classes */
+        .headermain {
+            color: rgb(243, 243, 243);
+            text-align: center;
+            font-size: 2rem;
+            margin: 20px 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-top: 1px solid white;
+        }
+
+        .left, .right {
+            flex: 1;
+        }
+
+        .center {
             flex: 1;
             text-align: center;
         }
 
-        footer {
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .game-section {
+            display: flex;
+            margin: 20px 0;
+        }
+
+        .footer {
             text-align: center;
             margin-top: auto;
+            padding: 20px;
+            border-top: 1px solid white;
         }
 
-        .footer-gif {
-            margin-bottom: 20px;
+        .footer p, .footer a {
+            margin: 5px 0;
+            font-size: 0.9rem;
         }
 
-        .footer-text {
-            margin-top: 20px;
+        .logo {
+            max-height: 300px;
+            max-width: 100%;
+        }
+
+        .img1 {
+            max-height: 500px;
+            max-width: 100%;
         }
     </style>
 </head>
 <body>
-    <div class="content">
-        <h1>somestuff</h1>
-        <hr>
+    <h1 class="headermain">SOMESTUFF studio</h1>
 
-        <p>
-            <a style="color:magenta; font-size: 18px; font-weight: bold;" href="journal.html">journal</a>
-            <a> | </a>
-            <a style="color: red; font-size: 18px; font-weight: bold;" href="heartkeeper.html">heart keeper</a>
-        </p>        
-        
-        <hr>
-        <a>1. blah blah blah important things etc... (check the </a> <a style="color: red; font-weight: bold;" href="heartkeeper.html"> heart keeper</a> <a>page!!!!)</a>
-        <br>
-        <h2><a>2. GET CatUp!!!</a></h2>
-        <div>
-            <img src="cat.gif" alt="cat gif" width="130" height="100">
-            <img src="cat.gif" alt="cat gif" width="130" height="100">
-            <img src="cat.gif" alt="cat gif" width="130" height="100">
+    <header class="header">
+        <div class="left">
+            <p>somestuff is a one-person indie game studio currently working on a game called <a>heart keeper</a></p>
         </div>
-        <br>
-        <br>
-        <iframe frameborder="0" src="https://itch.io/embed/2454690?bg_color=000000&amp;fg_color=b1bfc9&amp;link_color=23915a&amp;border_color=333333" width="552" height="167"><a href="https://dazaidev.itch.io/catup">CatUp by dazai</a></iframe>
-        <br>
-        <a>(My first finished and released game)</a>
-        <br>
-        <br>
-        <a>3. DOWNLOAD Rocket program!</a>
-        <br>
-        <iframe frameborder="0" src="https://itch.io/embed/2923414?bg_color=000000&amp;fg_color=ffffff&amp;link_color=73b470&amp;border_color=635851" width="552" height="167"><a href="https://dazaidev.itch.io/rocket-program">Rocket Program by dazai</a></iframe>
-        <br>
-        <a>(This game was created in C++ in less than two weeks for the SDL game jam)</a>
-        <br>
-        <br>
-        <a>4. CHECK OUT my other games:</a>
-        <br>
-        <iframe frameborder="0" src="https://itch.io/embed/1953982?bg_color=000000&amp;fg_color=b09e60&amp;link_color=764133&amp;border_color=333333" width="552" height="167"><a href="https://dazaidev.itch.io/joe">Joe’s Heaven by dazai</a></iframe>
-        <br>
-        <a>(My first roguelike game)</a>
-        <br>
-        <br>
-        <iframe frameborder="0" src="https://itch.io/embed/2426512?bg_color=000000&amp;fg_color=b6b8dd&amp;link_color=838add&amp;border_color=333333" width="552" height="167"><a href="https://dazaidev.itch.io/joes-peak">Joe's Peak by dazai</a></iframe>
-        <br>
-        <a>(A game created for my first game jam (winter game jam))</a>
-        <br>
-        <br>
-        <iframe frameborder="0" src="https://itch.io/embed/2548668?bg_color=000000&amp;fg_color=ffffff&amp;link_color=073aff&amp;border_color=333333" width="552" height="167"><a href="https://dazaidev.itch.io/cat-runner">cat grump jump by dazai</a></iframe>
-        <br>
-        <a>(This game was made in my own game engine YumeGL (powered by OpenGL))</a>
-        <br>
-        <br>
-        <iframe frameborder="0" src="https://itch.io/embed/976952?bg_color=b3dffe&amp;fg_color=d75cd0&amp;link_color=fe0cc0&amp;border_color=cd97d2" width="552" height="167"><a href="https://dazaidev.itch.io/the-abols">Frogillage by dazai</a></iframe>
-        <br>
-        <a>(my first game)</a>
-        <br>
-        <br>
-        <a style="font-size: 20px; font-weight: bold;" href="https://github.com/dazaizer0/beep_engine/releases/download/v1.1.1/beep_engine_out.zip">5. MAKE MUSIC WITH beep engine (DOWNLOAD)</a>
-        <br>
-        <br>
+
+        <div class="center">
+            <img src="Główna miniatura produktu-heart.png" alt="somestuff logo" class="logo">
+        </div>
+
+        <div class="right">
+            <p style="color: white;"> what is <a>heart keeper ?</a></p> 
+            <p style="color: white;"> <a>heart keeper</a> is a tower defense and action roguelike game where you are tasked with protecting a sacred heart using an arsenal of turrets and traps.
+                guided by the instructions of a mysterious figure named george you will combine strategy and quick reflexes to survive massive waves of enemies.</p>
+        </div>
+    </header>
+    
+    <div class="content">
+        <div class="game-section">
+            <iframe frameborder="0" src="https://itch.io/embed/2454690?border_width=0&amp;bg_color=000000&amp;fg_color=ff0000&amp;link_color=ff0000&amp;border_color=000000" width="206" height="165"><a href="https://dazaidev.itch.io/catup">CatUp by dazai</a></iframe>
+            <div style="margin-left: 20px; text-align: left;">
+                <p>CatUp is a platform arcade game where you play the role of a mother cat searching for her five missing kittens</p>
+            </div>
+        </div>
     </div>
 
-    <footer>
-        <div class="footer-gif">
-            <img src="expl.gif" alt="explosion gif" width="150" height="150">
-            <img src="expl.gif" alt="explosion gif" width="150" height="150">
-        </div>
-        
-        <hr>
-        <a style="color: red; font-weight: bold" >all by dazaidev</a>
+    <center>
         <br>
-        <a>why 'somestuffs'? 🚗 cause it's cheaper</a>
+        <br>
+        <a>newest video:</a>
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fS8M6CYjNoc?si=vXHcrmjli3OHUwxD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </center>
+
+    <br>
+    <p>.</p>
+    <footer class="footer">
+        <p>all by Jakub Szymański</p>
+        <p>why 'somestuffs'? 🚗 cause it's cheaper</p>
         <p>
-            <a> | </a>
-            <a style="color: red; font-weight: bold;" href="https://x.com/dazaidev"> X </a>
-            <a> | </a>
-            <a style="color: red; font-weight: bold;" href="https://bsky.app/profile/dazaidev.bsky.social"> BSKY </a>
-            <a> | </a>
-            <a style="color: red; font-weight: bold;" href="https://www.youtube.com/@dazaidev"> YOUTUBE </a>
-            <a> | </a>
-            <a style="color: red; font-weight: bold;" href="https://dazaidev.itch.io"> ITCH.IO </a>
-            <a> | </a>
-            <a style="color: red; font-weight: bold;"> somestuff.contact@gmail.com </a>
-            <a> | </a>
+            <a href="https://x.com/dazaidev">X</a> |
+            <a href="https://bsky.app/profile/dazaidev.bsky.social">BSKY</a> |
+            <a href="https://www.youtube.com/@dazaidev">YOUTUBE</a> |
+            <a href="https://dazaidev.itch.io">ITCH.IO</a> |
+            <a href="mailto:somestuff.contact@gmail.com">somestuff.contact@gmail.com</a>
         </p>
     </footer>
 </body>
