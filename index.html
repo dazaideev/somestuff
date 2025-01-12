@@ -24,7 +24,7 @@
             margin: 0;
             padding: 0;
             height: 100%;
-            font-family: 'Unica One', sans-serif; /* Zmieniony font */
+            font-family: 'Unica One', sans-serif;
             font-size: 20px;
             color: white;
             background: url('Główna miniatura produktu-BG.png') no-repeat center center fixed;
@@ -57,10 +57,12 @@
             align-items: center;
             padding: 20px;
             border-top: 1px solid white;
+            flex-wrap: wrap; /* Umożliwia zawijanie elementów */
         }
 
         .left, .right {
             flex: 1;
+            margin: 10px;
         }
 
         .center {
@@ -75,11 +77,18 @@
             align-items: center;
             justify-content: center;
             text-align: center;
+            padding: 10px;
         }
 
         .game-section {
             display: flex;
+            flex-direction: column;
             margin: 20px 0;
+            align-items: center;
+        }
+
+        .game-section iframe {
+            margin-bottom: 10px;
         }
 
         .footer {
@@ -95,13 +104,73 @@
         }
 
         .logo {
-            max-height: 300px;
+            max-height: 200px;
             max-width: 100%;
         }
 
         .img1 {
             max-height: 500px;
             max-width: 100%;
+        }
+
+        iframe {
+            max-width: 100%;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+
+            .header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .left, .right {
+                text-align: center;
+            }
+
+            .headermain {
+                font-size: 1.5rem;
+            }
+
+            .game-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer p, .footer a {
+                font-size: 0.8rem;
+            }
+
+            iframe {
+                width: 100%;
+                height: auto;
+            }
+
+            .logo {
+                max-height: 150px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: 14px;
+            }
+
+            .headermain {
+                font-size: 1.2rem;
+            }
+
+            .footer {
+                padding: 10px;
+            }
+
+            .footer p, .footer a {
+                font-size: 0.7rem;
+            }
         }
     </style>
 </head>
@@ -127,7 +196,7 @@
     <div class="content">
         <div class="game-section">
             <iframe frameborder="0" src="https://itch.io/embed/2454690?border_width=0&amp;bg_color=000000&amp;fg_color=ff0000&amp;link_color=ff0000&amp;border_color=000000" width="206" height="165"><a href="https://dazaidev.itch.io/catup">CatUp by dazai</a></iframe>
-            <div style="margin-left: 20px; text-align: left;">
+            <div style="margin-left: 20px; text-align: center;">
                 <p>CatUp is a platform arcade game where you play the role of a mother cat searching for her five missing kittens</p>
             </div>
         </div>
